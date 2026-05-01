@@ -1,0 +1,261 @@
+/* ===== Reset default browser spacing ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Full website body styling ===== */
+body {
+    background: #010145;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ===== Navbar full section ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #010145;
+    position: sticky;
+    top: 0;
+}
+
+/* ===== Website logo styling ===== */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== Navbar links styling ===== */
+.nav-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+/* ===== Hero section full area ===== */
+.hero {
+     min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding-top: 180px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("/static/images/logo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 180px;   /* paina nundi gap */
+}
+
+.hero-content h2 {
+    font-size: 20px;
+    font-weight: 100; 
+}
+
+/* ===== Button styling ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgba(253, 253, 253, 0.836);
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* ===== Card box styling sevices lo ===== */
+.card {
+    background: #585af7;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* home page lo card, offers */
+
+/* ===== Home page offers section only ===== */
+.highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px 8%;
+}
+
+/* ===== Only highlights cards ===== */
+.highlights .card {
+    background: #585af7;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 280px;
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Only highlights heading ===== */
+.highlights .card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* ===== Only highlights price ===== */
+.highlights .card p {
+    font-size: 18px;
+}
+
+/* ===== Old price ===== */
+.highlights .card del {
+    color: #f8f8f8;
+    margin-right: 10px;
+}
+
+/* ===== New price ===== */
+.highlights .card strong {
+    color: #f1f501;
+    font-size: 22px;
+}
+
+/* ===== Common page section styling ===== */
+.page-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+/* ===== Page title heading ===== */
+.page-section h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* ===== Contact page links styling ===== */
+.page-section p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* ===== Hover effect ===== */
+.page-section p a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+/* about page */
+.about-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+
+    /* background image */
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("/static/images/aboutphoto.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== Text left side ===== */
+.about-text {
+    max-width: 600px;
+    color: white;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* ===== Gallery grid layout ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Desktop image style */
+.gallery-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== Mobile images style ===== */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+        gap: 5px; /* small gap like Instagram */
+    }
+
+    .gallery-grid img {
+        height: 120px; /* smaller height */
+        border-radius: 5px;
+    }
+}
+
+/* ===== Footer full section ===== */
+footer {
+    background: #010145;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ===== Social media icons ===== */
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* ===== Mobile responsive design ===== */
+@media (max-width: 768px) {
+    
+    /* Navbar mobile view */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Hero heading mobile size */
+    .hero-content h1 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,17 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="page-section">
+    <h1>Gallery</h1>
+
+    <div class="gallery-grid">
+        {% for image in images %}
+        <a href="{% static image %}" class="glightbox">
+            <img src="{% static image %}" alt="Gallery Image">
+        </a>
+        {% endfor %}
+    </div>
+
+</section>
+{% endblock %}
